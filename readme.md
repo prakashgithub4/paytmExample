@@ -74,7 +74,7 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 # paytmExample
   
   
-  money Refund functionality 
+ <!-- money Refund functionality -->
 public function refunding(Request $request){
 
     	
@@ -140,7 +140,7 @@ public function refunding(Request $request){
 			
 		}
 
-		// Refund status Functionality 
+		<!-- Refund status Functionality -->
         
 		public function refundStatus($mid,$order_id,$refund_id){
 
@@ -208,7 +208,7 @@ public function refunding(Request $request){
 
 
 
-iniciate Payment process
+<!-- iniciate Payment process -->
 
 public function store(Request $request)
     {
@@ -234,9 +234,9 @@ public function store(Request $request)
 
 
 
-paytm configurable fuctions 
+<!--paytm configurable fuctions -->
 public function handlePaytmRequest( $order_id, $amount ) {
-		// Load all functions of encdec_paytm.php and config-paytm.php
+		<!-- Load all functions of encdec_paytm.php and config-paytm.php -->
 		$this->getAllEncdecFunc();
 		$this->getConfigPaytmSettings();
 
@@ -534,7 +534,7 @@ public function handlePaytmRequest( $order_id, $amount ) {
 		}
 	}
 
-   // change replace your creditials 
+   <!-- change replace your creditials -->
 
 	/**
 	 * Config Paytm Settings from config_paytm.php file of paytm kit
